@@ -1,8 +1,5 @@
 from django.db import models
-
-
-class AppType(models.Model):
-    name = models.CharField(max_length=150)
+from apps.models.appTypeModel import AppType
 
 
 class App(models.Model):

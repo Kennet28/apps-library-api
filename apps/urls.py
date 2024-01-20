@@ -1,6 +1,8 @@
 from django.urls import path
 
-from apps.views import AppList, AppTypesList, AppCreate, AppUpdate
+
+from apps.views.appTypeViews import AppTypesList
+from apps.views.appViews import AppList, AppCreate, AppUpdate
 
 urlpatterns = [
     path('app-types/', AppTypesList.as_view()),

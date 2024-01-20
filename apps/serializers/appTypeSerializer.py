@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from apps.models import AppType, App
+from apps.models.appTypeModel import AppType
 
 
 class AppTypeSerializer(serializers.ModelSerializer):
@@ -9,7 +9,3 @@ class AppTypeSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class AppSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = App
-        fields = '__all__'
